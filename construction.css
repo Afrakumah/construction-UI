@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/*  1. Use a more-intuitive box-sizing model.*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} /*  2. Remove default margin*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+} /*  Typographic tweaks!  3. Add accessible line-height  4. Improve text rendering*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+} /*  5. Improve media defaults*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+} /*  6. Remove built-in form typography styles*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+} /*  7. Avoid text overflows*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+} /*  8. Create a root stacking context*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+/*************** main css starts here *****************/
+.hero {
+    background-image: url(images/1st\ img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15% 15%;
+     padding-bottom: 5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+     padding-top: 2rem; 
+     color: floralwhite;
+     z-index: 1;
+}
+
+.btn_primary {
+  background-color: blue;
+  border: 0;
+  padding: 5px 20px;
+  color: floralwhite;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+#ham {
+  display: none;
+}
+
+.fa-caret-down {
+  font-size: 8px;
+}
+
+.best_construction {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+flex-wrap: wrap;
+margin-top: 6rem;
+line-height: 30px;
+letter-spacing: 1px;
+text-align: end; 
+padding-right: 13rem;
+}
+
+.best_construction p:first-of-type {
+font-size: 1.5rem;
+color:floralwhite;
+overflow-wrap: break-word;
+}
+
+.best_construction span {
+font-size: 2.7rem;
+font-weight: 600;
+color: floralwhite;
+} 
+
+.best_construction p:last-of-type {
+  font-size: 12px;
+  color: floralwhite;
+  overflow-wrap: break-word;
+}
+
+.best_construction button {
+  background-color: #fff;
+  color: black;
+}
+
+.tools {
+  display: flex;
+ gap: 1rem;
+ justify-content: center;
+ margin-top: 3rem;
+ margin-bottom: 3rem;
+ text-align: center;
+ flex-wrap: wrap;
+ flex: 1;
+}
+
+.paint {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.paint h3 {
+font-weight: normal;
+}
+
+.paint p:first-of-type {
+  line-height: 20px;
+  font-size: 10px;
+  overflow-wrap: break-word;
+}
+
+.paint p:last-of-type {
+  font-size: 12px;
+}
+
+.fa-paint-roller {
+  font-size: 2rem;
+}
+
+.fa-lightbulb {
+    font-size: 2rem;
+}
+
+.superhores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1rem;
+background-color: rgb(248, 245, 245);
+}
+
+.superhores img {
+height: 15rem;
+}
+
+ .detail {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+ padding-top: 3rem;
+
+ align-items: flex-end;
+padding-right: 13rem;
+
+}
+
+/* .super {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 16rem;
+}  */
+
+.detail p:first-of-type {
+  font-size: 12px;
+  padding-left: 4rem;
+}
+
+.detail p:last-of-type {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.members {
+  display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+.members > div span:first-of-type {
+  font-weight: 600;
+  font-size: 12px;
+  display: block;
+text-align: right;
+}
+
+.members > div span:last-of-type {
+  font-size: 12px;
+  /* display: block; */
+}
+
+/************** projects section ***************/
+.recents {
+  display: flex;
+  flex-direction: column;
+ padding-right: 49%;
+ /* position: relative;
+ right: 21rem; */
+}
+
+.recents p:first-of-type {
+  font-size: 14px;
+  }
+
+.recents span {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.recents p:last-of-type {
+ font-size: 10px;
+ overflow-wrap: break-word;
+ flex-wrap: wrap;
+}
+
+.fotos img {
+  height: 12.7rem;
+  display: inline-block;
+}
+
+.fotos p {
+  font-size: 12px;
+   position: absolute;
+    /* left: 10px; */
+    bottom: 15px;
+    text-align: center;
+    padding-left: 10px;
+    overflow-wrap: break-word;
+    color: white;
+    opacity: 0.8;
+}
+
+.contents {
+  display: flex;
+  gap: 0.7rem;
+  position: relative;
+  flex: 1;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ align-items: center;
+ gap: 1.5rem;
+ margin-top: 3rem;
+ margin-bottom: 3rem;
+ flex-wrap: wrap;
+ flex: 1;
+}
+
+/*************** projects section *****************/
+.freequote {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.2rem;
+justify-items: center;
+align-items: center;
+background-image: url(images/windows.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: 2rem;
+margin-bottom: 2rem;
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+.quotes {
+  display: flex;
+  flex-direction: column; 
+  gap: 0.2rem;
+  overflow-wrap: break-word;
+}
+
+.quotes p:first-of-type {
+  font-size: 14px;
+  }
+
+.quotes span {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.quotes p:last-of-type {
+ font-size: 10px;
+ overflow-wrap: break-word;
+}
+
+
+.allInputs {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  flex: 1;
+  padding-right: 8rem;
+  font-size: 13.7px;
+ 
+}
+
+.inputEmail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.8rem;
+}
+
+.allInputs input {
+   border: 1px solid rgb(208, 206, 206)
+}
+
+.inputName {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.8rem;
+}
+
+.about {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.about img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.stars span {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.stars > div i {
+  color: goldenrod;
+}
+
+.stars p {
+  overflow-wrap: break-word;
+ flex-wrap: wrap;
+ line-height: 25px;
+ font-size: 12px;
+}
+
+.stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.7rem;
+  font-size: 10px;
+} 
+
+.aboutNames {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.customer {
+  display: flex;
+  flex-direction: column; 
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.customer p:first-of-type {
+  font-size: 14px;
+  }
+
+.customer span {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.customer p:last-of-type {
+ font-size: 10px;
+ overflow-wrap: break-word;
+}
+
+.reviews {
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+ justify-content: center;
+ flex-wrap: wrap;
+ flex: 1;
+ padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.info p:first-of-type {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info p:last-of-type {
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.launch {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact p:first-of-type {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 10px;
+  text-align: left;
+}
+
+.timing {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: right;
+}
+
+.timing p:first-of-type {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.timing ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 10px;
+  /* text-align: right; */
+}
+
+.timing a {
+  color: floralwhite;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  background-color: black;
+  color: floralwhite;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  flex: 1;
+}
+
+
+/* ----------media query starts here-----------*/
+/* ----------media query starts here-----------*/
+/* ----------media query starts here-----------*/
+/* ----------media query starts here-----------*/
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    transition: all 1s ease-in;
+
+  }
+
+  .menu li {
+    margin-top: 0.5rem;
+  }
+
+  #ham {
+    display: block;
+    font-size: 1rem;
+    background-color: blue;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+   border-radius: 5px;
+  }
+
+  header {
+    position: relative;
+  }
+
+header .showMenu {
+  display: block;
+  position: absolute;
+  top: 5.6rem;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+background-color: #74cee7c9;
+}
+
+.tools {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.aboutNames {
+  flex-direction: column;
+}
+
+footer {
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+
+.contents {
+  flex-direction: column;
+}
+
+.fotos p{
+  position: relative;
+  bottom: 45px;
+  right: 35px;
+}
+
+.timing {
+  align-items: center
+}
+
+.quotes p:last-of-type {
+    overflow-wrap: break-word;
+}
+
+.recents {
+  padding-right: inherit;
+}
+
+.about {
+  flex-direction: column;
+}
+
+.superhores img {
+    width: 100%;
+}
+
+.about img {
+  margin: 0 auto;
+}
+
+.stars {
+  align-items: center
+}
+
+.allInputs {
+  padding: 0;
+}
+
+.best_construction p:first-of-type {
+  /* color: rgb(211, 116, 106); */
+   color:rgb(55 55 205);
+  opacity: 1;
+  font-weight: 500;
+}
+
+.best_construction p:last-of-type {
+/* color: midnightblue; */
+color: rgb(55 55 205);
+font-weight: 600;
+opacity: 1;
+}
+
+.best_construction span {
+  opacity: 1;
+  color: rgb(55 55 205);
+}
+
+.best_construction button {
+  font-size: 2rem;
+}
+
+}
